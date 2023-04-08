@@ -1,0 +1,80 @@
+
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel} 
+
+\usepackage{mathtools}
+\usepackage[thinc]{esdiff}
+
+\usepackage[a4paper,margin=1in,footskip=0.5in]{geometry}
+\usepackage{indentfirst}
+
+\usepackage[bookmarks=true, colorlinks=false]{hyperref} 
+\usepackage{bookmark}
+
+\date{April 8, 2023}
+
+\title{Электромагнитное Излучение}
+% Electromagnetic Radiation
+% electromagnetic_radiation
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Радиационное затухание}
+
+\subsection{Радиационное затухание}
+
+Модель электрона в атоме: заряд, закрепленный на пружине с собственной частотой \(\omega_0\).
+Определим для такого осциллятора величину \(Q\), потеря энергии в данном случае вызвана так называемым радиационным сопротивлением или радиационным затуханием.
+
+Для любой колеблющейся системы \textit{добротность} \(Q\) определяется как отношение энергии системы, к потере потери энергии за 1 радиан:
+\[
+    Q = \frac{W}{dW/d\phi}
+\]
+Запишем \(Q\) по-другому воспользуясь равенством
+\[
+    dW/d\phi = (dW/dt)/(d\phi/dt) = -(dW/dt)/(\omega)
+\] 
+\textit{Вопрос}: откуда появляется знак минус?
+
+\medskip
+
+Итого получаем:
+\[
+    Q = - \frac{\omega W}{dW/dt} \quad (32.8)
+\]
+
+Если \(Q\) задано то легко получить закон спадения энергии колебаний:
+\[
+    (dW/dt) = - \frac{\omega}{Q} W
+\]
+откуда следует что:
+\[
+    W = W_0 e^{-\omega t/Q}
+\]
+
+\medskip
+
+Формула полного потока энергии, излучаемого зарядом. Мощность излучения.
+\[
+    P = \frac{q^2 \omega^4 x_0^2 }{12 \pi \epsilon_0 c^3} \quad (32.6)
+\] 
+Подставим (32.6) в (32.8) вместо \(dW/dt\), а в качестве полной энергии осциллятора возьмем \(W=\frac{1}{2}m_e\omega_0^2x_0^2\), где \(\omega_0\) это собственная частота излучения атома, а \(m_e\) - масса электрона.
+
+После сокращений получаем формулу:
+\[
+    \frac{1}{Q} =
+    \frac
+    {4 \pi e^2}
+    {2 \lambda m_e c^2}
+    \quad (32.10)
+\]
+В формуле (32.10) \(e^2=\frac{q_e^2}{4\pi\epsilon_0}\), также мы воспользовались тем что \(2\pi\lambda=\omega_0/c\)
+
+\end{document}
