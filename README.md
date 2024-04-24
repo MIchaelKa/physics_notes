@@ -1,5 +1,5 @@
 
-My notes on The Feynman Lectures on Physics in LaTeX.
+My notes on **The Feynman Lectures on Physics** and other physics notes.
 
 **Resources:**  
 - Updated online version from Caltech: [Caltech version](https://www.feynmanlectures.caltech.edu/)  
